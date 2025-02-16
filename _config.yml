@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: WCBM Workshop
 # Description of the Site
-description: "Welcome to the Workshop on Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond (WCBM) @ CoRL 2024!"
+description: "Welcome to the Workshop on Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond (WCBM)!"
 # URL of Image of the Site
 site-image: /assets/images/humanoids.png
 # Keywords of the Site

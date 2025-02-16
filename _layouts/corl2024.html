@@ -1,0 +1,45 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include corl2024/head.html %}
+
+<body>
+  {% include corl2024/navbar.html %}
+  {% include corl2024/showcase.html %}
+  {% include corl2024/about.html %}
+  {% include corl2024/schedule.html %}
+  {% include corl2024/talks.html %}
+  {% include corl2024/posters.html %}
+  {% include corl2024/organizers.html %}
+  {% include corl2024/cfp.html %}
+  <!--Footer begins here-->
+  {% include corl2024/footer.html %}
+</body>
+<script>
+  var navItems = document.getElementsByClassName('navbar-item');
+  var heroes = document.getElementsByClassName('hero');
+  const viewOffset = 200;
+
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    var position = window.pageYOffset;
+
+    for (var i = 0; i < navItems.length; i++) {
+      navItems[i].classList.remove('is-active');
+    }
+
+    for (var i = 0; i < heroes.length; i++) {
+        var sectionTop = heroes[i].offsetTop-viewOffset;
+        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset;
+
+        if (scroll >= sectionTop && scroll < sectionBottom) {
+          navItems[i+1].classList.add('is-active');
+      }
+    }
+  });
+</script>
+
+</html>
