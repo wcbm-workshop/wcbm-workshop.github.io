@@ -23,14 +23,14 @@
                 <div class="navbar-end">
                     <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                         href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">Home</a>
-                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">About</a>
-                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#schedule">Schedule</a>
-                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#speaker">Invited speakers</a>
-                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#org">Organization</a>
-                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#cfp">Call for papers</a>
+                    <a class="navbar-item" href="{{ '/corl2024/#about' | relative_url }}">About</a>
+                    <a class="navbar-item" href="{{ '/corl2024/#schedule' | relative_url }}">Schedule</a>
+                    <a class="navbar-item" href="{{ '/corl2024/#speaker' | relative_url }}">Invited speakers</a>
+                    <a class="navbar-item" href="{{ '/corl2024/#org' | relative_url }}">Organization</a>
+                    <a class="navbar-item" href="{{ '/corl2024/#cfp' | relative_url }}">Call for papers</a>
                     <!-- <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
                         href="{{site.url}}{{site.baseurl}}/blog">Accepted papers</a> -->
-                </div>
+                </div> 
 
             </div>
         </div>
