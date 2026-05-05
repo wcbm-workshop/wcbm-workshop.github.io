@@ -1,3 +1,3 @@
 ---
-layout: rss2025
+layout: rss2026
 ---
